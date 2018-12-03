@@ -251,7 +251,6 @@ a{
 .block-post-left {
 	position: absolute;
 	top: 29px;
-	left: 3px;
 }
 .block-post-right {
 	margin-left: 330px;
@@ -552,6 +551,7 @@ a{
 
 .banner{
 	width: 100%;
+	max-width: 270px;
 }
 .search {
 	position: relative;
@@ -718,6 +718,12 @@ footer {
 	.sidebar-block-tags-list {
 		text-align: center;
 	}
+	.sidebar {
+		margin-top: 150px;
+	}
+	.footer {
+		width: 100%;
+	}
 }
 @media (max-width: 830px) {
 	.header .container, .post-top, .footer-galary {
@@ -730,11 +736,17 @@ footer {
 		justify-content: center;
 		margin-top: 28px;
 	}
+	.social-post {
+		margin-top: 0;
+	}
 	.social-sidebar {
 	    justify-content: space-between;
 	}
 	.social-footer {
-	    justify-content: space-between;
+	    margin: 0 auto;
+	}
+	.post-top {
+		width: 700px;
 	}
 	.post-top-col{
 	    width: 100%;
@@ -756,5 +768,45 @@ footer {
 	.footer-galary__thumb:last-child {
 		display: none;
 	}
+	.footer {
+		width: 700px;
+	}
+	header {
+		width: 700px;
+	}
+}
+@media (max-width: 660px) {
+	.block-post-left {
+	    position: inherit;
+	    top: inherit;
+	}
+	.block-post-left__thumb, .block-post-left__thumb img{
+	    width: 100%;
+	}
+	.block-post-right {
+	    margin-left: 0;
+	}
+	.block-post-right__info {
+	    border: 3px solid #b59f5b;
+	    padding: 39px 35px 18px 35px;
+	    margin-left: 15px;
+	    margin-right: 15px;
+	    text-align: center;
+	    margin-top: -20px;
+	}
+	.block-post-right__date {
+	    justify-content: space-between;
+	}
+	.sidebar-block-form input {
+	    text-align: center;
+	}
+	.block-post-right__description {
+	    padding: 25px 20px 17px 20px;
+	}
+	.block-post-right__flex {
+    padding: 5px 20px 8px 20px;
+    justify-content: space-between;
+}
+
 }
 
